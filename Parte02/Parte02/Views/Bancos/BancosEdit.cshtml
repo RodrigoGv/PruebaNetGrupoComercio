@@ -1,0 +1,17 @@
+﻿@model Banco
+@{
+    ViewData["Title"] = "Bancos";
+}
+<h3>Edición Banco</h3>
+
+<div>
+    <form asp-controller="Bancos" asp-action="save">
+        <input type="hidden" asp-for="Codigo" />
+        Nombre: <input type="text" style="text-transform:uppercase" asp-for="Nombre" />
+        <br /><br />
+        Dirección: <input type="text" style="text-transform:uppercase; width:500px" asp-for="Direccion" />
+        <br /><br />
+        <input type="submit" id="btnBuscar" value="Grabar" />
+        <a asp-controller="Bancos" asp-action="Bancos">Regresar</a>
+    </form>
+</div>

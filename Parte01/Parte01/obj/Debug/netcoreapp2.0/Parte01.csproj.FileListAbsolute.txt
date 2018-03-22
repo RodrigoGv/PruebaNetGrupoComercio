@@ -1,0 +1,11 @@
+C:\Users\Rodrigo\Desktop\PruebaNetGrupoComercio\Parte01\Parte01\bin\Debug\netcoreapp2.0\Parte01.deps.json
+C:\Users\Rodrigo\Desktop\PruebaNetGrupoComercio\Parte01\Parte01\bin\Debug\netcoreapp2.0\Parte01.runtimeconfig.json
+C:\Users\Rodrigo\Desktop\PruebaNetGrupoComercio\Parte01\Parte01\bin\Debug\netcoreapp2.0\Parte01.runtimeconfig.dev.json
+C:\Users\Rodrigo\Desktop\PruebaNetGrupoComercio\Parte01\Parte01\bin\Debug\netcoreapp2.0\Parte01.dll
+C:\Users\Rodrigo\Desktop\PruebaNetGrupoComercio\Parte01\Parte01\bin\Debug\netcoreapp2.0\Parte01.pdb
+C:\Users\Rodrigo\Desktop\PruebaNetGrupoComercio\Parte01\Parte01\obj\Debug\netcoreapp2.0\Parte01.csprojResolveAssemblyReference.cache
+C:\Users\Rodrigo\Desktop\PruebaNetGrupoComercio\Parte01\Parte01\obj\Debug\netcoreapp2.0\Parte01.csproj.CoreCompileInputs.cache
+C:\Users\Rodrigo\Desktop\PruebaNetGrupoComercio\Parte01\Parte01\obj\Debug\netcoreapp2.0\Parte01.AssemblyInfoInputs.cache
+C:\Users\Rodrigo\Desktop\PruebaNetGrupoComercio\Parte01\Parte01\obj\Debug\netcoreapp2.0\Parte01.AssemblyInfo.cs
+C:\Users\Rodrigo\Desktop\PruebaNetGrupoComercio\Parte01\Parte01\obj\Debug\netcoreapp2.0\Parte01.dll
+C:\Users\Rodrigo\Desktop\PruebaNetGrupoComercio\Parte01\Parte01\obj\Debug\netcoreapp2.0\Parte01.pdb

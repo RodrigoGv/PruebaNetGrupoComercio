@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Banco>
+@{
+    ViewData["Title"] = "Bancos";
+}
+<h3>Mantenimiento Maestro de Bancos</h3>
+
+<div>
+    <a asp-action="edit">Nuevo</a>
+    <br /><br />
+    @using (Html.BeginForm("search", "Bancos", FormMethod.Get))
+    {
+        <text>Código: </text>@Html.TextBox("codigoFiltro", null, new { @type = "number", @style = "text-transform:uppercase" });
+        <text>Nombre: </text>@Html.TextBox("textoFiltro", null, new { @style = "text-transform:uppercase" });
+        <input type="submit" value="Buscar" />
+   }
+    <br />
+    <br />
+    <table class="grid">
+        <thead>
+            <tr>
+                <th></th>
+                <th data-field="codigo" width="50px">Código</th>
+                <th data-field="nombre" width="200px">Nombre</th>
+                <th data-field="direccion" width="500px">Dirección</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null)
+            {
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td><a asp-controller="Bancos" asp-action="edit" asp-route-id="@item.Codigo">Editar</a></td>
+                        <td>@Html.DisplayFor(modelItem => item.Codigo)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Nombre)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Direccion)</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

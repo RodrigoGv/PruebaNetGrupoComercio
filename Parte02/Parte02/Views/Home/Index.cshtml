@@ -1,0 +1,9 @@
+﻿@model Usuario
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+    <h3>Bienvenido</h3>
+    @Html.Label(Model.Nombre + " " + Model.ApePaterno + " " + Model.ApeMaterno)
+</div>

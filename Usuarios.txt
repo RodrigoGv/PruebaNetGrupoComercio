@@ -1,0 +1,11 @@
+Administrador:
+RGUEVARA
+123
+
+Operador 1:
+SRODRIGUEZ
+123
+
+Operador 2:
+EVIZCARRA
+123

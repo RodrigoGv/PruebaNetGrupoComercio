@@ -1,0 +1,24 @@
+﻿@model Login
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+    <h3>Login</h3>
+    <br />
+    @using (Html.BeginForm("Loguear", "Home", FormMethod.Post))
+    {
+    @if (Model != null && !String.IsNullOrWhiteSpace(Model.Mensaje))
+    {
+        @Html.Label("", Model.Mensaje, new { @style = "color:red" })
+        <br />
+    }
+    <text>Usuario:</text><br />
+    @Html.TextBoxFor(m => m.Usuario, new { @style = "text-transform:uppercase" })
+    <br /><br />
+    <text>Contraseña:</text><br />
+    @Html.TextBoxFor(m => m.Contrasenia, "", new { @type="password" })
+    <br /><br />
+    <input type="submit" value="Loguear" />
+    }
+</div>

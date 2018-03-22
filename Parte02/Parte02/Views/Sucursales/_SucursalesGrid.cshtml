@@ -1,0 +1,50 @@
+﻿@model SucursalView
+
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+            <th>
+                Banco
+            </th>
+            <th>
+                Código
+            </th>
+            <th>
+                Nombre
+            </th>
+            <th>
+                Dirección
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@if (Model != null && Model.sucursales != null && Model.sucursales.Count > 0)
+{
+@foreach (var item in Model.sucursales)
+{
+        <tr>
+            <td>
+                @Html.ActionLink("Editar", "edit", new { banco=item.CodBanco, sucursal=item.Codigo })
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomBanco)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Codigo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Direccion)
+            </td>
+        </tr>
+}
+}
+else
+{
+        <tr><td colspan="5"><label>Realizar una nueva búsqueda</label></td></tr>
+}
+    </tbody>
+</table>

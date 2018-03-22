@@ -1,0 +1,32 @@
+C:\Users\Silvia\Desktop\Rodri\Antes de UT\Parte02\Parte2.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Silvia\Desktop\Rodri\Antes de UT\Parte02\Parte2.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Silvia\Desktop\Rodri\Antes de UT\Parte02\Parte2.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Silvia\Desktop\Rodri\Antes de UT\Parte02\Parte2.Test\bin\Debug\netcoreapp2.0\Parte2.Test.deps.json
+C:\Users\Silvia\Desktop\Rodri\Antes de UT\Parte02\Parte2.Test\bin\Debug\netcoreapp2.0\Parte2.Test.runtimeconfig.json
+C:\Users\Silvia\Desktop\Rodri\Antes de UT\Parte02\Parte2.Test\bin\Debug\netcoreapp2.0\Parte2.Test.runtimeconfig.dev.json
+C:\Users\Silvia\Desktop\Rodri\Antes de UT\Parte02\Parte2.Test\bin\Debug\netcoreapp2.0\Parte2.Test.dll
+C:\Users\Silvia\Desktop\Rodri\Antes de UT\Parte02\Parte2.Test\obj\Debug\netcoreapp2.0\Parte2.Test.csprojResolveAssemblyReference.cache
+C:\Users\Silvia\Desktop\Rodri\Antes de UT\Parte02\Parte2.Test\obj\Debug\netcoreapp2.0\Parte2.Test.csproj.CoreCompileInputs.cache
+C:\Users\Silvia\Desktop\Rodri\Antes de UT\Parte02\Parte2.Test\obj\Debug\netcoreapp2.0\Parte2.Test.AssemblyInfoInputs.cache
+C:\Users\Silvia\Desktop\Rodri\Antes de UT\Parte02\Parte2.Test\obj\Debug\netcoreapp2.0\Parte2.Test.AssemblyInfo.cs
+C:\Users\Silvia\Desktop\Rodri\Antes de UT\Parte02\Parte2.Test\bin\Debug\netcoreapp2.0\Parte2.Test.pdb
+C:\Users\Silvia\Desktop\Rodri\Antes de UT\Parte02\Parte2.Test\bin\Debug\netcoreapp2.0\Parte02.dll
+C:\Users\Silvia\Desktop\Rodri\Antes de UT\Parte02\Parte2.Test\bin\Debug\netcoreapp2.0\Parte02.pdb
+C:\Users\Silvia\Desktop\Rodri\Antes de UT\Parte02\Parte2.Test\obj\Debug\netcoreapp2.0\Parte2.Test.dll
+C:\Users\Silvia\Desktop\Rodri\Antes de UT\Parte02\Parte2.Test\obj\Debug\netcoreapp2.0\Parte2.Test.pdb
+C:\Users\Rodrigo\Desktop\PruebaNetGrupoComercio\Parte02\Parte2.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Rodrigo\Desktop\PruebaNetGrupoComercio\Parte02\Parte2.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Rodrigo\Desktop\PruebaNetGrupoComercio\Parte02\Parte2.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Rodrigo\Desktop\PruebaNetGrupoComercio\Parte02\Parte2.Test\bin\Debug\netcoreapp2.0\Parte2.Test.deps.json
+C:\Users\Rodrigo\Desktop\PruebaNetGrupoComercio\Parte02\Parte2.Test\bin\Debug\netcoreapp2.0\Parte2.Test.runtimeconfig.json
+C:\Users\Rodrigo\Desktop\PruebaNetGrupoComercio\Parte02\Parte2.Test\bin\Debug\netcoreapp2.0\Parte2.Test.runtimeconfig.dev.json
+C:\Users\Rodrigo\Desktop\PruebaNetGrupoComercio\Parte02\Parte2.Test\bin\Debug\netcoreapp2.0\Parte2.Test.dll
+C:\Users\Rodrigo\Desktop\PruebaNetGrupoComercio\Parte02\Parte2.Test\bin\Debug\netcoreapp2.0\Parte2.Test.pdb
+C:\Users\Rodrigo\Desktop\PruebaNetGrupoComercio\Parte02\Parte2.Test\bin\Debug\netcoreapp2.0\Parte02.dll
+C:\Users\Rodrigo\Desktop\PruebaNetGrupoComercio\Parte02\Parte2.Test\bin\Debug\netcoreapp2.0\Parte02.pdb
+C:\Users\Rodrigo\Desktop\PruebaNetGrupoComercio\Parte02\Parte2.Test\obj\Debug\netcoreapp2.0\Parte2.Test.csprojResolveAssemblyReference.cache
+C:\Users\Rodrigo\Desktop\PruebaNetGrupoComercio\Parte02\Parte2.Test\obj\Debug\netcoreapp2.0\Parte2.Test.csproj.CoreCompileInputs.cache
+C:\Users\Rodrigo\Desktop\PruebaNetGrupoComercio\Parte02\Parte2.Test\obj\Debug\netcoreapp2.0\Parte2.Test.AssemblyInfoInputs.cache
+C:\Users\Rodrigo\Desktop\PruebaNetGrupoComercio\Parte02\Parte2.Test\obj\Debug\netcoreapp2.0\Parte2.Test.AssemblyInfo.cs
+C:\Users\Rodrigo\Desktop\PruebaNetGrupoComercio\Parte02\Parte2.Test\obj\Debug\netcoreapp2.0\Parte2.Test.dll
+C:\Users\Rodrigo\Desktop\PruebaNetGrupoComercio\Parte02\Parte2.Test\obj\Debug\netcoreapp2.0\Parte2.Test.pdb

@@ -1,0 +1,19 @@
+﻿@model SucursalEdit
+@{
+    ViewData["Title"] = "Bancos";
+}
+<h3>Edición Banco</h3>
+
+<div>
+    <form asp-controller="Sucursales" asp-action="save">
+        <input type="hidden" asp-for="sucursal.Codigo" />
+        <text>Banco: </text>@Html.DropDownListFor(m => m.sucursal.CodBanco, Model.bancos, "--SELECCIONE--")
+        <br /><br />
+        <text>Nombre: </text><input type="text" style="text-transform:uppercase" asp-for="sucursal.Nombre" />
+        <br /><br />
+        <text>Dirección: </text><input type="text" style="text-transform:uppercase; width:500px" asp-for="sucursal.Direccion" />
+        <br /><br />
+        <input type="submit" id="btnBuscar" value="Grabar" />
+        <a asp-controller="Sucursales" asp-action="Sucursales">Regresar</a>
+    </form>
+</div>

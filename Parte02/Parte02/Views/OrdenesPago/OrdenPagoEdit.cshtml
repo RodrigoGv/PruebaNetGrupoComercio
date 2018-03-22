@@ -1,0 +1,47 @@
+﻿@model OrdenPagoEdit
+@{
+    ViewData["Title"] = "Ordenes Pago";
+}
+<h3>Edición Banco</h3>
+
+<div>
+    <form asp-controller="OrdenesPago" asp-action="save">
+        <input type="hidden" asp-for="OrdenPago.Codigo" />
+        <text>Banco: </text>@Html.DropDownListFor(m => m.OrdenPago.CodBanco, Model.Bancos, "--SELECCIONE--", new { @onchange = "return ddlBancosSelectedIndexChanged();" })
+        <br /><br />
+        <text>Sucursal: </text>@Html.DropDownListFor(m => m.OrdenPago.CodSucursal, Model.Sucursales)
+        <br /><br />
+        <text>Moneda: </text>@Html.DropDownListFor(m => m.OrdenPago.CodMoneda, Model.Monedas, "--SELECCIONE--")
+        <br /><br />
+        <text>Monto: </text>@Html.TextBoxFor(m => m.OrdenPago.Monto, Model.OrdenPago.Monto.ToString("#.00"), new { @type = "number", @step = "0.01" })
+        <br /><br />
+        <text>Estado: </text>@Html.DropDownListFor(m => m.OrdenPago.CodEstado, Model.Estados, "--SELECCIONE--")
+        <br /><br />
+        <input type="submit" id="btnBuscar" value="Grabar" />
+        <a asp-controller="OrdenesPago" asp-action="OrdenesPago">Regresar</a>
+    </form>
+</div>
+<script>
+    function ddlBancosSelectedIndexChanged() {
+        $('#OrdenPago_CodSucursal').empty();
+        $.ajax({
+            url: '@Url.Action("ddlSucursales", "OrdenesPago")',
+            contentType: 'text/html; charset=utf-8',
+            type: 'GET',
+            dataType: 'json',
+            data: {
+                banco: $("#OrdenPago_CodBanco").val(),
+                obligatorio: true
+            },
+            success: function (response) {
+                $.each(response, function (i, sucursal) {
+                    $("#OrdenPago_CodSucursal").append('<option value="' + sucursal.value + '">' + sucursal.text + '</option>');
+                });
+            },
+            error: function (xhr, status, error) {
+                $("#OrdenPago_CodSucursal").append('<option value="0">--SELECCIONE--</option>');
+                alert(status + " : " + error);
+            }
+        });
+    }
+</script>

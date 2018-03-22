@@ -1,0 +1,62 @@
+﻿@model OrdenPagoView
+
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+            <th>
+                Código
+            </th>
+            <th>
+                Banco
+            </th>
+            <th>
+                Sucursal
+            </th>
+            <th>
+                Moneda
+            </th>
+            <th>
+                Monto
+            </th>
+            <th>
+                Estado
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@if (Model != null && Model.OrdenesPago != null && Model.OrdenesPago.Count > 0)
+{
+@foreach (var item in Model.OrdenesPago)
+{
+        <tr>
+            <td>
+                @Html.ActionLink("Editar", "edit", new { id = item.Codigo })
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Codigo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomBanco)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomSucursal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Moneda)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Monto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estado)
+            </td>
+        </tr>
+}
+}
+else
+{
+        <tr><td colspan="7"><label>Realizar una nueva búsqueda</label></td></tr>
+}
+    </tbody>
+</table>

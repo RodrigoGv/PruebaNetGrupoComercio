@@ -1,0 +1,67 @@
+﻿@model OrdenPagoView
+@{
+    ViewData["Title"] = "Ordenes Pago";
+}
+<h3>Mantenimiento Maestro de Ordenes de Pago</h3>
+
+<div>
+    <a asp-action="edit">Nuevo</a>
+    <br /><br />
+    @using (Html.BeginForm())
+    {
+        <text>Código: </text>@Html.TextBox("ddlCodigoPago", null, new { @type = "number" });
+        <text>Banco: </text>@Html.DropDownList("ddlBanco", Model.Bancos, "--TODOS--", new { @onchange = "return ddlBancosSelectedIndexChanged();" });
+        <text>Sucursales: </text>@Html.DropDownList("ddlSucursal", Model.Sucursales, "--TODOS--", null);
+        <text>Monedas: </text>@Html.DropDownList("ddlMoneda", Model.Monedas, "--TODOS--", null);
+        <text>Estados: </text>@Html.DropDownList("ddlEstado", Model.Estados, "--TODOS--", null);
+        <br /><br />
+        <input type="submit" value="Buscar" onclick="buscar(); return false;" />
+        <br /><br />
+        <div id="searchArea">@{if (Model != null) { Html.RenderPartial("_OrdenesPagoGrid", Model); } }</div>
+    }
+</div>
+<script>
+    function buscar() {
+        $.ajax({
+            url: '@Url.Action("search", "OrdenesPago")',
+            contentType: 'text/html; charset=utf-8',
+            type: 'GET',
+            dataType: 'html',
+            data: {
+                ordenpago: $("#ddlCodigoPago").val(),
+                banco: $("#ddlBanco").val(),
+                sucursal: $("#ddlSucursal").val(),
+                moneda: $("#ddlMoneda").val(),
+                estado: $("#ddlEstado").val()
+            },
+            success: function (response) {
+                    $('#searchArea').html(response);
+                },
+            error: function (xhr, status, error) {
+                alert(status + " : " + error);
+            }
+        });
+    }
+    function ddlBancosSelectedIndexChanged() {
+        $('#ddlSucursal').empty();
+        $.ajax({
+            url: '@Url.Action("ddlSucursales")',
+            contentType: 'text/html; charset=utf-8',
+            type: 'GET',
+            dataType: 'json',
+            data: {
+                banco: $("#ddlBanco").val(),
+                obligatorio: false
+            },
+            success: function (response) {
+                $.each(response, function (i, sucursal) {
+                    $("#ddlSucursal").append('<option value="' + sucursal.value + '">' + sucursal.text + '</option>');
+                });
+            },
+            error: function (xhr, status, error) {
+                $("#ddlSucursal").append('<option value="0">--TODOS--</option>');
+                alert(status + " : " + error);
+            }
+        });
+    }
+</script>
